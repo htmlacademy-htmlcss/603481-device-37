@@ -1,7 +1,7 @@
 # Личный проект «Девайс»
 
 * Студент: [Максим Валерьевич](https://up.htmlacademy.ru/htmlcss/37/user/603481).
-* Наставник: [Анна Лисененкова](https://htmlacademy.ru/profile/ankhena)..
+*  Наставник: [Наталья Зотова](https://htmlacademy.ru/profile/id1079951).
 
 ---
 
