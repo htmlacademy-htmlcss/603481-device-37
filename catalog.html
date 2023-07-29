@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
     <title>Device-Каталог товаров</title>
 </head>
 <body>
@@ -10,7 +11,7 @@
   <header class="page-header">
 
     <a class="logo-link" href="index.html">
-      <img class="logo-icon" src="#" width="145" height="36" alt="Логотип компании Device">
+      <img class="logo-icon" src="/images/logo-devais.svg" width="145" height="36" alt="Логотип компании Device">
     </a>
 
     <form class="form-search" action="http://echo.htmlacademy.ru" method="get">
@@ -43,7 +44,7 @@
     <nav class="navigation">
       <ul class="navigation-list">
         <li class="navigation-list-item">
-          <a class="navigation-list-link" href="catalog.html">Каталог товаров</a>
+          <a class="navigation-list-link navigation-list-link-catalog" href="catalog.html">Каталог товаров</a>
           <ul class="navigation-list">
             <li class="navigation-list-item">
               <a class="navigation-list-link" href="#">Виртуальная реальность</a>
@@ -66,13 +67,13 @@
           </ul>
         </li>
         <li class="navigation-list-item">
-          <a class="navigation-list-link" href="#">Доставка</a>
+          <a class="navigation-list-link navigation-list-link-catalog" href="#">Доставка</a>
         </li>
         <li class="navigation-list-item">
-          <a class="navigation-list-link" href="#">Гарантия</a>
+          <a class="navigation-list-link navigation-list-link-catalog" href="#">Гарантия</a>
         </li>
         <li class="navigation-list-item">
-          <a class="navigation-list-link" href="#">Контакты</a>
+          <a class="navigation-list-link navigation-list-link-catalog" href="#">Контакты</a>
         </li>
       </ul>
     </nav>
@@ -80,7 +81,7 @@
   </header>
 
   <main class="main-page main-inner">
-    <h1 class="main-inner-title">Моноподы для селфи</h1>
+    <h1 class="title main-inner-title">Моноподы для селфи</h1>
 
     <ul class="breadcrumbs-list">
       <li class="breadcrumbs-item">
@@ -99,7 +100,7 @@
       <h2 class="visually-hidden">Каталог товаров с фильтрами</h2>
 
       <section class="section-form">
-        <h3 class="visually-hidden">Фильтр:</h3>
+        <h3 class="subtitle filter-title">Фильтр:</h3>
 
         <form class="form-filter" action="https://echo.htmlacademy.ru/" method="get">
           <fieldset class="form-fieldset">
@@ -149,7 +150,6 @@
             <legend class="form-legend">Bluetooth</legend>
 
             <ul class="filter-list">
-
               <li class="filter-item">
                 <label class="filter-label">
                   <input class="filter-radio" type="radio" name="black" checked>
@@ -168,11 +168,10 @@
 
           <button class="button button-current" type="submit">Показать</button>
         </form>
-
       </section>
 
       <section class="section-sort">
-        <h2 class="sort-title">Сортировка:</h2>
+        <h2 class="subtitle sort-title">Сортировка:</h2>
 
         <div class="sort-product">
           <select class="select-sort" aria-label="Сортировка">
@@ -200,7 +199,7 @@
           <ul class="card-list">
             <li class="card-items">
               <div class="card-wrapper">
-                <img class="card-img" src="#" width="360" height="380" alt="Любительская селфи-палка">
+                <img class="card-img" src="images/cards/photo-1.jpg" width="360" height="380" alt="Любительская селфи-палка">
                 <span class="visually-hidden">new</span>
                 <a class="button button-current visually-hidden" href="#" tabindex="-1">Подробнее</a>
               </div>
@@ -214,7 +213,7 @@
 
             <li class="card-items">
               <div class="card-wrapper">
-                <img class="card-img" src="#" width="360" height="380" alt="Профессиональная селфи-палка">
+                <img class="card-img" src="images/cards/photo-2.jpg" width="360" height="380" alt="Профессиональная селфи-палка">
                 <span class="card-label">new</span>
                 <a class="button button-current visually-hidden" href="#" tabindex="-1">Подробнее</a>
               </div>
@@ -228,7 +227,7 @@
 
             <li class="card-items">
               <div class="card-wrapper">
-                <img class="card-img" src="#" width="360" height="380" alt="Непотопляемая селфи-палка">
+                <img class="card-img" src="images/cards/photo-3.jpg" width="360" height="380" alt="Непотопляемая селфи-палка">
                 <span class="visually-hidden">new</span>
                 <a class="button button-current visually-hidden" href="#" tabindex="-1">Подробнее</a>
               </div>
@@ -243,7 +242,7 @@
 
             <li class="card-items">
               <div class="card-wrapper">
-                <img class="card-img" src="#" width="360" height="380" alt="Селфи-палка &laquo;Следуй за мной&raquo;">
+                <img class="card-img" src="images/cards/photo-4.jpg" width="360" height="380" alt="Селфи-палка &laquo;Следуй за мной&raquo;">
                 <span class="visually-hidden">new</span>
                 <a class="button button-current visually-hidden" href="#" tabindex="-1">Подробнее</a>
               </div>
@@ -261,7 +260,7 @@
       </section>
 
       <div class="pagination-page">
-        <a class="pagination-llink-prev" href="#">Назад</a>
+        <a class="pagination-list-link pagination-llink-prev" href="#">Назад</a>
 
         <ul class="pagination-list">
           <li class="pagination-list-item">
@@ -285,7 +284,7 @@
           </li>
         </ul>
 
-        <a class="pagination-link-next" href="#">Вперёд</a>
+        <a class="pagination-list-link pagination-link-next" href="#">Вперёд</a>
       </div>
 
     </section>
@@ -294,7 +293,7 @@
   <footer class="footer-page">
 
     <a class="logo-link" href="index.html">
-      <img class="logo-icon" src="#" width="145" height="36" alt="Логотип компании Device">
+      <img class="logo-icon" src="images/logo-devais.svg" width="145" height="36" alt="Логотип компании Device">
     </a>
 
     <address class="address-contacts">
@@ -303,13 +302,13 @@
 
     <ul class="footer-menu-list">
       <li class="footer-menu-items">
-        <a href="#" class="footer-menu-link">Доставка</a>
+        <a class="footer-menu-link" href="#" >Доставка</a>
       </li>
       <li class="footer-menu-items">
-        <a href="#" class="foter-menu-link">Гарантия</a>
+        <a class="footer-menu-link" href="#" >Гарантия</a>
       </li>
       <li class="footer-menu-items">
-        <a href="#" class="foter-menu-link"> Контакты</a>
+        <a class="footer-menu-link" href="#" > Контакты</a>
       </li>
     </ul>
 
