@@ -8,21 +8,21 @@
 </head>
 <body>
 
-  <header class="page-header">
-    <div class="page-header-container container">
+  <header class="header-page">
+    <div class="header-container container">
 
-      <a class="logo-link" href="index.html" aria-current="page">
+      <a class="logo-link" href="index.html">
         <img class="logo-icon" src="images/logo-device.svg" width="145" height="36" alt="Логотип компании Device">
       </a>
 
-      <div class="page-header-user">
+      <div class="header-user-container">
         <form class="form-search" action="http://echo.htmlacademy.ru" method="get">
           <h2 class="visually-hidden">Форма поиска по сайту</h2>
           <label class="form-label">
             <input class="form-input-search" type="text" placeholder="Поиск по сайту">
             <span class="visually-hidden">Введите название товара</span>
           </label>
-          <button class="button-form-search" type="submit">Найти</button>
+          <button class="button button-search" type="submit">Найти</button>
         </form>
 
         <ul class="user-list list-reset">
@@ -46,7 +46,7 @@
       <nav class="navigation">
         <ul class="header-navigation navigation list-reset">
           <li class="navigation-item navigation-item-catalog">
-            <a class="navigation-link navigation-link-catalog" href="catalog.html">
+            <a class="navigation-link navigation-link-catalog" href="catalog.html" aria-current="page">
               Каталог товаров
               <span></span>
             </a>
@@ -96,7 +96,7 @@
 
     <section class="intro">
       <div class="intro-container container">
-        <h1 class="title main-inner-title">Моноподы для селфи</h1>
+        <h1 class="title main-page-title">Моноподы для селфи</h1>
 
         <ul class="breadcrumbs-list list-reset">
           <li class="breadcrumbs-item">
@@ -106,7 +106,7 @@
             <a class="breadcrumbs-link" href="#">Каталог товаров</a>
           </li>
           <li class="breadcrumbs-item">
-            <a class="breadcrumbs-link breadcrumbs-link-current" href="#">Моноподы для селфи</a>
+            <a class="breadcrumbs-link breadcrumbs-link-current" href="catalog.html" aria-current="page">Моноподы для селфи</a>
           </li>
         </ul>
       </div>
@@ -121,7 +121,7 @@
 
           <form class="form-filter" action="https://echo.htmlacademy.ru/" method="get">
 
-            <fieldset class="form-fieldset form-fieldset-price">
+            <fieldset class="filter-fieldset-group fieldset-group-price">
               <legend class="form-legend">Стоимость</legend>
 
               <div class="filter-price-controls">
@@ -153,7 +153,7 @@
             </fieldset>
 
 
-            <fieldset class="form-fieldset">
+            <fieldset class="filter-fieldset-group fieldset-group-checkbox">
               <legend class="form-legend">Цвет</legend>
 
               <ul class="filter-list list-reset">
@@ -196,7 +196,7 @@
 
             </fieldset>
 
-            <fieldset class="form-fieldset">
+            <fieldset class="filter-fieldset-group fieldset-group-radio">
               <legend class="form-legend">Bluetooth</legend>
 
               <ul class="filter-list list-reset">
@@ -216,7 +216,7 @@
               </ul>
             </fieldset>
 
-            <button class="button filter-submit button-light" type="submit">Показать</button>
+            <button class="button filter-button button-light" type="submit">Показать</button>
           </form>
         </section>
 
@@ -260,7 +260,8 @@
                 </a>
               </li>
 
-              <li class="card-items">
+              <!-- card-items-new либо card-link-new-->
+              <li class="card-items card-items-new">
                 <a class="card-link" href="#">
                   <div class="card-img">
                     <span class="card-img-btn button button-light">Подробнее</span>
@@ -303,14 +304,15 @@
               </li>
             </ul>
 
-            <button class="button button-load-more" type="button">Загрузить ещё</button>
+            <a class="button button-load-more" href="#">Загрузить ещё</a>
 
             <div class="pagination-page">
-              <a class="pagination-list-link pagination-link-prev pagination-link-disabled" href="#">Назад</a>
+              <a class="pagination-button pagination-button-prev pagination-button-disabled" href="#">Назад</a>
+              <!-- <a class="pagination-button pagination-button-prev pagination-link-disabled" href="#">Назад</a> -->
 
               <ul class="pagination-list list-reset">
                 <li class="pagination-list-item">
-                  <a class="pagination-link pagination-link-active" href="#">1</a>
+                  <a class="pagination-link pagination-link-current" href="#" aria-current="page">1</a>
                 </li>
 
                 <li class="pagination-list-item">
@@ -330,7 +332,7 @@
                 </li>
               </ul>
 
-              <a class="pagination-list-link pagination-link-next" href="#">Вперёд</a>
+              <a class="pagination-button pagination-button-next" href="#">Вперёд</a>
             </div>
           </div>
         </section>
@@ -340,8 +342,8 @@
 
   <footer class="footer-page">
 
-    <div class="footer-page-container container">
-      <a class="logo-link" href="index.html" aria-current="page">
+    <div class="footer-container container">
+      <a class="logo-link" href="index.html">
         <img class="logo-icon" src="images/logo-device-footer.svg" width="145" height="36" alt="Логотип компании Device">
       </a>
 
@@ -350,7 +352,7 @@
           <p class="address-text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
         </address>
 
-        <ul class="footer-navigationnavigation navigation list-reset">
+        <ul class="footer-navigation navigation-list list-reset">
           <li class="navigation-item">
             <a class="navigation-link" href="#delivery">Доставка</a>
           </li>

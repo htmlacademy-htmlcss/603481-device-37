@@ -8,21 +8,22 @@
 </head>
 <body>
 
-  <header class="page-header">
-    <div class="page-header-container container">
+  <header class="header-page">
+    <div class="header-container container">
 
       <a class="logo-link" href="index.html" aria-current="page">
         <img class="logo-icon" src="images/logo-device.svg" width="145" height="36" alt="Логотип компании Device">
       </a>
 
-      <div class="page-header-user">
+      <div class="header-user-container">
         <form class="form-search" action="http://echo.htmlacademy.ru" method="get">
           <h2 class="visually-hidden">Форма поиска по сайту</h2>
           <label class="form-label">
-            <input class="form-input-search" type="text" placeholder="Поиск по сайту">
+            <input class="form-input-search" type="text" name="search" placeholder="Поиск по сайту">
             <span class="visually-hidden">Введите название товара</span>
           </label>
-          <button class="button-form-search" type="submit">Найти</button>
+          <button class="button button-search" type="submit">Найти</button>
+          <!-- <button class="button-search" type="submit">Найти</button> -->
         </form>
 
         <ul class="user-list list-reset">
@@ -33,15 +34,17 @@
             <a class="user-list-link user-icon-compare" href="#">Сравнить</a>
           </li>
           <li class="user-list-item">
-            <a class="user-list-link user-icon-basket" href="#">Корзина
+            <a class="user-list-link user-icon-basket" href="#">
               <span class="basket-counter">2</span>
+              Корзина
+              <!-- Блок с корзиной -->
             </a>
           </li>
         </ul>
       </div>
 
       <nav class="navigation">
-        <ul class="header-navigation navigation list-reset">
+        <ul class="header-navigation navigation-list list-reset">
           <li class="navigation-item navigation-item-catalog">
             <a class="navigation-link navigation-link-catalog" href="catalog.html">
               Каталог товаров
@@ -97,12 +100,12 @@
 
         <ol class="slider-list list-reset">
           <li class="slider-item slider-item-active">
-            <div class="slider-img">
+            <figure class="slider-img">
               <img src="images/slider/slider-1.png" width="560" height="560" alt="квадрокоптер">
-            </div>
+            </figure>
 
             <div class="slider-content">
-              <h3 class="title slider-title title">Порхает как бабочка, жалит как пчела!</h3>
+              <h3 class="title slider-title">Порхает как бабочка, жалит как пчела!</h3>
 
               <p class="slider-desc">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру</p>
 
@@ -122,12 +125,12 @@
           </li>
 
           <li class="slider-item">
-            <div class="slider-img">
+            <figure class="slider-img">
               <img src="images/slider/slider-2.png" width="560" height="560" alt="фитнес-браслет">
-            </div>
+            </figure>
 
             <div class="slider-content">
-              <h3 class="title slider-title title">Худеем правильно!</h3>
+              <h3 class="title slider-title">Худеем правильно!</h3>
 
               <p class="slider-desc">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
 
@@ -143,12 +146,12 @@
           </li>
 
           <li class="slider-item">
-            <div class="slider-img">
+            <figure class="slider-img">
               <img src="images/slider/slider-3.png" width="560" height="560" alt="Самая длинная палка для селфи">
-            </div>
+            </figure>
 
             <div class="slider-content">
-              <h3 class="title slider-title title">Делай селфи, как Бен Стиллер!</h3>
+              <h3 class="title slider-title">Делай селфи, как Бен Стиллер!</h3>
 
               <p class="slider-desc">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 кг.</p>
 
@@ -316,8 +319,8 @@
 
         <form class="form-subscribe" action="https://echo.htmlacademy.ru" method="post">
           <label class="visually-hidden" for="email">Укажите ваш e-mail</label>
-          <input class="form-email" type="email" name="email" id="email" placeholder="Ваш e-mail" required>
-          <button class="button button-form-subscribe" type="submit">Подписаться</button>
+          <input class="form-input-email" type="email" name="email" id="email" placeholder="Ваш e-mail" required>
+          <button class="button button-subscribe button-dark" type="submit">Подписаться</button>
         </form>
 
         <span class="subscribe-info">Это бесплатно</span>
@@ -328,8 +331,8 @@
 
   <footer class="footer-page">
 
-    <div class="footer-page-container container">
-      <a class="logo-link" href="index.html" aria-current="page">
+    <div class="footer-container container">
+      <a class="logo-link" href="index.html">
         <img class="logo-icon" src="images/logo-device-footer.svg" width="145" height="36" alt="Логотип компании Device">
       </a>
 
@@ -338,7 +341,7 @@
           <p class="address-text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
         </address>
 
-        <ul class="footer-navigationnavigation navigation list-reset">
+        <ul class="footer-navigation navigation-list list-reset">
           <li class="navigation-item">
             <a class="navigation-link" href="#delivery">Доставка</a>
           </li>
@@ -378,6 +381,5 @@
 
     </div>
   </footer>
-
 </body>
 </html>
