@@ -18,16 +18,15 @@
       <div class="header-user-container">
         <form class="form-search" action="http://echo.htmlacademy.ru" method="get">
           <h2 class="visually-hidden">Форма поиска по сайту</h2>
-          <label class="form-label">
+          <label class="form-label-search">
             <input class="form-input-search" type="text" name="search" placeholder="Поиск по сайту">
             <span class="visually-hidden">Введите название товара</span>
           </label>
-          <button class="button button-search" type="submit">Найти</button>
-          <!-- <button class="button-search" type="submit">Найти</button> -->
+          <button class="button button-search button-dark" type="submit">Найти</button>
         </form>
 
         <ul class="user-list list-reset">
-          <li class="user-list-item">
+          <li class="user-list-item user-list-login">
             <a class="user-list-link user-icon-login" href="#">Войти</a>
           </li>
           <li class="user-list-item ">
@@ -113,18 +112,18 @@
 
               <dl class="slider-params">
                 <div class="slider-params-item">
-                  <dt class="slider-key">Дальность полета</dt>
-                  <dd class="slider-value">800 м</dd>
+                  <dt class="slider-key">800 м</dt>
+                  <dd class="slider-value">Дальность полета</dd>
                 </div>
                 <div class="slider-params-item">
-                  <dt class="slider-key">Радиус поражения</dt>
-                  <dd class="slider-value">50 м</dd>
+                  <dt class="slider-key">50 м</dt>
+                  <dd class="slider-value">Радиус поражения</dd>
                 </div>
               </dl>
             </div>
           </li>
 
-          <li class="slider-item">
+          <li class="slider-item ">
             <figure class="slider-img">
               <img src="images/slider/slider-2.png" width="560" height="560" alt="фитнес-браслет">
             </figure>
@@ -232,7 +231,7 @@
 
         <ul class="services-menu-item services-menu-item-active list-reset">
           <li class="services-menu-item">
-            <button class="button button-light services-menu-button services-menu-button-active" type="button">Доставка</button>
+            <button class="button services-menu-button services-menu-button-active" type="button">Доставка</button>
           </li>
           <li class="services-menu-item">
             <button class="button button-light services-menu-button" type="button">Гарантия</button>
@@ -282,7 +281,7 @@
             <li class="about-item">ТоксБерри</li>
         </ul>
 
-        <a class="button button-current" href="#">Подробнее о нас</a>
+        <a class="button button-light button-current" href="#">Подробнее о нас</a>
 
       </section>
 
@@ -312,18 +311,21 @@
     </div>
 
     <section class="subscribe">
-      <div class="subscribe-container">
-        <h2 class="title subscribe-title">Подпишитесь на рассылку</h2>
+      <div class="subscribe-container container">
+        <h2 class="title subscribe-title">Подпишитесь <br> на рассылку</h2>
 
-        <p class="subscribe-desc">Еженедельный дайджест с обзорами новинок, длительными тест-драйвами, распаковками, а также акции, спецпредложения и вот это вот всё.</p>
+        <p class="subscribe-desc">Еженедельный дайджест с обзорами новинок, <br> длительными тест-драйвами, распаковками, а также акции,<br> спецпредложения и вот это вот всё.</p>
 
-        <form class="form-subscribe" action="https://echo.htmlacademy.ru" method="post">
-          <label class="visually-hidden" for="email">Укажите ваш e-mail</label>
-          <input class="form-input-email" type="email" name="email" id="email" placeholder="Ваш e-mail" required>
-          <button class="button button-subscribe button-dark" type="submit">Подписаться</button>
-        </form>
+        <div class="subscribe-wrapper">
+          <form class="form-subscribe" action="https://echo.htmlacademy.ru" method="post">
+            <label class="visually-hidden" for="email">Укажите ваш e-mail</label>
+            <input class="form-input-email" type="email" name="email" id="email" placeholder="Ваш e-mail" required>
+            <button class="button button-subscribe button-dark" type="submit">Подписаться</button>
+          </form>
 
-        <span class="subscribe-info">Это бесплатно</span>
+          <span class="subscribe-info">Это бесплатно</span>
+        </div>
+
       </div>
     </section>
 
@@ -332,13 +334,13 @@
   <footer class="footer-page">
 
     <div class="footer-container container">
-      <a class="logo-link" href="index.html">
+      <a class="logo-link-footer" href="index.html">
         <img class="logo-icon" src="images/logo-device-footer.svg" width="145" height="36" alt="Логотип компании Device">
       </a>
 
       <div class="footer-content">
         <address class="address-contacts">
-          <p class="address-text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
+          <p class="address-text">Санкт-Петербург, набережная <br> реки Карповки, 5, литера П.</p>
         </address>
 
         <ul class="footer-navigation navigation-list list-reset">
@@ -374,12 +376,13 @@
           </li>
         </ul>
 
-        <a class="htmlacademy" href="https://htmlacademy.ru/" target="_blank">
+        <a class="htmlacademy-link" href="https://htmlacademy.ru/" target="_blank">
           <span class="visually-hidden">HTMLAcademy</span>
         </a>
       </div>
 
     </div>
+    
   </footer>
 </body>
 </html>
