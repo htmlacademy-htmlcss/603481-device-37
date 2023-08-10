@@ -298,6 +298,10 @@ form-input-text:focus-visible::placeholder {
   text-decoration: none;
 }
 
+.user-list-link:hover {
+  opacity: 0.6;
+}
+
 .user-list-link:active {
   opacity: 0.3;
 }
