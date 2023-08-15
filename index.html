@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/style.css">
-    <title>Device-Главная страница</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/style.css">
+  <title>Device-Главная страница</title>
 </head>
 <body>
 
@@ -18,10 +18,12 @@
       <div class="header-user-container">
         <form class="form-search" action="http://echo.htmlacademy.ru" method="get">
           <h2 class="visually-hidden">Форма поиска по сайту</h2>
-          <label class="label-form-search visually-hidden" for="search">Введите название товара</label>
-          <input class="form-input-search" type="text" name="search" id="search" placeholder="Поиск по сайту">
+          <label class="label-form-search" for="search">
+            <input class="form-input-search" type="text" name="search" id="search" placeholder="Поиск по сайту">
+            <span class="visually-hidden">Введите название товара</span>
+          </label>
+
           <button class="button search-button button-dark" type="submit">Найти</button>
-          <!-- .button -->
         </form>
 
         <ul class="user-list list-reset">
@@ -42,13 +44,13 @@
                 <li class="basket-list-item">
                   <a class="basket-list-link" href="#" tabindex="-1">
                     <img class="basket-photo" src="images/cards/smoll/product-1-small.jpg" width="39" height="43" alt="Любительская селфи-палка">
-                    
+
                     <h4 class="basket-title-link" href="#">Любительская <br>селфи-палка</h4>
                   </a>
 
                   <button class="button-basket-delete" type="button">
-                    <span class="visually-hidden">Удалить из корзины</span>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" fill="none"><g clip-path="url(#a)"><path d="m11 1-1-1-4.5 4.5L1 0 0 1l4.5 4.5L0 10l1 1 4.5-4.5L10 11l1-1-4.5-4.5L11 1Z"/></g><defs><clipPath id="a"><path d="M0 0h11v11H0z"/></clipPath></defs></svg>
+                    <!-- <span class="visually-hidden">Удалить из корзины</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" fill="none"><g clip-path="url(#a)"><path d="m11 1-1-1-4.5 4.5L1 0 0 1l4.5 4.5L0 10l1 1 4.5-4.5L10 11l1-1-4.5-4.5L11 1Z"/></g><defs><clipPath id="a"><path d="M0 0h11v11H0z"/></clipPath></defs></svg> -->
                   </button>
                 </li>
 
@@ -60,17 +62,19 @@
 
                   <button class="button-basket-delete" type="button">
                     <span class="visually-hidden">Удалить из корзины</span>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" fill="none"><g clip-path="url(#a)"><path d="m11 1-1-1-4.5 4.5L1 0 0 1l4.5 4.5L0 10l1 1 4.5-4.5L10 11l1-1-4.5-4.5L11 1Z"/></g><defs><clipPath id="a"><path d="M0 0h11v11H0z"/></clipPath></defs></svg>
+                    <!-- <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" fill="none"><g clip-path="url(#a)"><path d="m11 1-1-1-4.5 4.5L1 0 0 1l4.5 4.5L0 10l1 1 4.5-4.5L10 11l1-1-4.5-4.5L11 1Z"/></g><defs><clipPath id="a"><path d="M0 0h11v11H0z"/></clipPath></defs></svg> -->
                   </button>
                 </li>
               </ul>
-              
+
               <div class="basket-check">
                 <p class="basket-product">Товаров: 2</p>
                 <p class="basket-price">Сумма: 2000 ₽</p>
               </div>
-              
-                <a class="button button-basket" type="button">Открыть корзину</a>
+
+              <div class="basket-open">
+                <a class="button basket-button" type="button">Открыть корзину</a>
+              </div>
             </div>
           </li>
         </ul>
@@ -265,7 +269,7 @@
       <div class="services-container container">
         <h2 class="visually-hidden">Сервис</h2>
 
-        <ul class="services-menu-item list-reset">
+        <ul class="services-menu-list list-reset">
           <li class="services-menu-item services-menu-item-active">
             <button class="button services-menu-button button-light services-menu-button-active" type="button">Доставка</button>
           </li>
@@ -298,12 +302,13 @@
 
     <div class="promo-block container">
       <a class="promo-block-link button-modal" href="modal.html">Доставим редкий товар под заказ</a>
+      <span></span> <!-- для стилизации i -->
     </div>
 
     <div class="wrapper-contacts container">
 
-      <section class="about-info">
-        <h2 class="title title-info">О нас</h2>
+      <section class="info about-info">
+        <h2 class="title info-title">О нас</h2>
 
         <p class="info-desc">Огромный выбор гаджетов не оставит равнодушным <br>гика, который есть в каждом из нас.</p>
 
@@ -315,47 +320,51 @@
             <li class="info-item">ТоксБерри</li>
         </ul>
 
-        <a class="button button-light info-button" href="#">Подробнее о нас</a>
+        <a class="button button-light info-button about-button" href="#">Подробнее о нас</a>
 
       </section>
 
-      <section class="contacts-info">
-          <h2 class="title title-info">Контакты</h2>
+      <section class="info contacts-info">
+        <h2 class="title info-title">Контакты</h2>
 
-          <p class="info-desc">Вы можете забрать товар сами, заехав в наш офис. <br>Заодно сможете проверить работоспособность покупки. </p>
+        <p class="info-desc">Вы можете забрать товар сами, заехав в наш офис. <br>Заодно сможете проверить работоспособность покупки.</p>
 
-          <h3 class="subtitle-info">Интернет-магазин «Девайс»</h3>
+        <div class="info-address">
+          <h3 class="info-subtitle">Интернет-магазин «Девайс»</h3>
 
           <address class="address-info">
-            <p class="address-text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
-            <a class="contacts-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
+            <p class="address-desc info-address">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
+            <a class="address-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
           </address>
+        </div>
 
-          <h3 class="subtitle-info">Время работы</h3>
+        <div class="info-chedule">
+          <h3 class="info-subtitle">Время работы</h3>
 
           <ul class="info-chedule-list list-reset">
             <li class="info-chedule-item">пн—пт: с 10:00 до 22:00</li>
             <li class="info-chedule-item">сб—вс: с 10:00 до 19:00</li>
           </ul>
+        </div>
 
-          <a class="button button-light info" href="#">Напишите нам</a>
+        <a class="button button-light info-button contacts-button" href="#">Напишите нам</a>
       </section>
     </div>
 
     <section class="subscribe">
       <div class="subscribe-container container">
         <h2 class="title subscribe-title">Подпишитесь <br>на рассылку</h2>
-  
+
         <p class="subscribe-desc">Еженедельный дайджест с обзорами новинок, <br>длительными тест-драйвами, распаковками, а также акции,<br> спецпредложения и вот это вот всё.</p>
-  
+
         <form class="subscribe-form" action="https://echo.htmlacademy.ru" method="post">
           <label class="visually-hidden" for="email">Укажите ваш e-mail</label>
           <input class="form-input-email" type="email" name="email" id="email" placeholder="Ваш e-mail" required>
-          <button class="button button-subscribe button-form-dark" type="submit">Подписаться</button>
+          <button class="button subscribe-button button-dark" type="submit">Подписаться</button>
         </form>
 
         <span class="subscribe-info">Это бесплатно</span>
-  
+
       </div>
     </section>
 
@@ -369,7 +378,7 @@
 
       <div class="footer-content">
         <address class="address-info">
-          <p class="address-text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
+          <p class="address-desc">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
         </address>
 
         <ul class="footer-navigation navigation-list list-reset">
@@ -384,7 +393,7 @@
           </li>
         </ul>
 
-        <a class="contacts-phone" href="tel:+78128121212">Тел.: +7 (812) 812-12-12</a>
+        <a class="address-phone" href="tel:+78128121212">Тел.: +7 (812) 812-12-12</a>
 
         <ul class="social-list list-reset">
           <li class="social-list-item">

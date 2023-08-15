@@ -35,9 +35,9 @@ html {
 
 body {
   /* sticky footer */
-  min-height: 100%; 
+  min-height: 100%;
   display: flex;
-  flex-direction: column;  
+  flex-direction: column;
   /* // sticky footer */
 
   font-family:  "Rubik", "Arial", sans-serif;
@@ -46,7 +46,7 @@ body {
   line-height: 30px;
   background-color: #fff;
   color: #444;
-  
+
   margin: 0;
 }
 
@@ -229,8 +229,8 @@ img {
   font-weight: 400;
   line-height: 20px;
   color: #000;
-  
-  border-radius: 50px 0px 0px 50px;
+
+  border-radius: 50px 0 0 50px;
   border-color: transparent;
   border: 2px solid #000;
   background: rgba(255, 255, 255, 0.00);
@@ -268,12 +268,13 @@ form-input-text:focus-visible::placeholder {
 
   text-transform: none;
   letter-spacing: normal;
-  
+
   border-radius: 0px 50px 50px 0px;
   border: 2px solid #000;
 
   padding: 8px 15px;
 }
+
 /* user list */
 .user-list {
   display: flex;
@@ -292,7 +293,7 @@ form-input-text:focus-visible::placeholder {
   flex-wrap: wrap;
   align-items: center;
   /* gap: 10px; */
-  
+
   color: #000;
   border: 2px solid transparent;
   text-decoration: none;
@@ -395,7 +396,7 @@ form-input-text:focus-visible::placeholder {
 
 .basket-list-item:not(:last-child) {
   margin-bottom: 20px;
-} 
+}
 
 .basket-list-link {
   display: flex;
@@ -461,17 +462,17 @@ form-input-text:focus-visible::placeholder {
   fill: #fff;
 }
 
-.button-basket {
+.basket-button {
   display: block;
   color: #000;
   background-color: #fff;
   border-color: transparent;
 }
 
-.button-basket:hover {
+.basket-button:hover {
   background-color: #ffe17f;
 }
-.button-basket:active {
+.basket-button:active {
   color: rgba(0, 0, 0, .3);
 }
 
@@ -625,9 +626,8 @@ form-input-text:focus-visible::placeholder {
 }
 
 .slider-content::after {
-  position: absolute;
-  content: "0" counter(slide);
-  counter-increment: slide;
+  /* content: "0" counter(slide);
+  counter-increment: slide; */
   position: absolute;
 
   top: -120px;
@@ -805,7 +805,7 @@ form-input-text:focus-visible::placeholder {
 .category-link {
   position: relative;
   display: block;
-  
+
   font-family: "Raleway", "Arial", sans-serif;
   font-size: 18px;
   font-weight: 800;
@@ -895,11 +895,11 @@ form-input-text:focus-visible::placeholder {
 }
 
 .services-menu-button-active {
-  color: #ffe17f;  
+  color: #ffe17f;
 }
 
 .services-menu-button-active::before {
-  display: none; 
+  display: none;
 }
 
 .services-item {
@@ -954,7 +954,7 @@ form-input-text:focus-visible::placeholder {
   content: "";
   top: 0;
   left: 0;
-  
+
   width: 125px;
   height: 100%;
   background-color: #ffe17f;
@@ -970,7 +970,7 @@ form-input-text:focus-visible::placeholder {
   content: "";
   top: 50%;
   right: 0;
-  
+
   width: 40px;
   height: 40px;
   border-radius: 50%;
@@ -1448,7 +1448,7 @@ form-input-text:focus-visible::placeholder {
   background-size: 13px 8px;
   background-position: right center;
   background-color: transparent;
-  
+
   -webkit-appearance: none;
   appearance: none;
   border: 2px solid transparent;
@@ -1527,23 +1527,22 @@ form-input-text:focus-visible::placeholder {
 
 .card-items-new::before {
   position: absolute;
-  display: block;
   content: "new";
-  
+
   top: 27px;
   right: 27px;
 
   width: 60px;
   height: 60px;
   color: rgba(0, 0, 0, 0.60);
-  
+
   border: 2px solid rgba(0, 0, 0, 0.60);;
   border-radius: 50%;
 
   display: flex;
   justify-content: center;
   align-items: center;
-  
+
   font-family: "Raleway", "Arial", sans-serif;
   font-size: 14px;
   font-weight: 800;
@@ -1564,8 +1563,8 @@ form-input-text:focus-visible::placeholder {
   position: relative;
   margin-bottom: 30px;
   background: rgba(217, 217, 217, 0.00);
-  
-  
+
+
 }
 
 .card-link:hover {
@@ -1643,7 +1642,7 @@ form-input-text:focus-visible::placeholder {
 
 .pagination-button {
   display: inline-block;
-  
+
   font-family: "Raleway", "Arial", sans-serif;
   font-weight: 800;
   line-height: 19px;

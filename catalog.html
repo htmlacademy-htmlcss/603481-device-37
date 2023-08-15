@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/style.css">
-    <title>Device-Главная страница</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/style.css">
+  <title>Device-Главная страница</title>
 </head>
 <body>
 
@@ -18,10 +18,12 @@
       <div class="header-user-container">
         <form class="form-search" action="http://echo.htmlacademy.ru" method="get">
           <h2 class="visually-hidden">Форма поиска по сайту</h2>
-          <label class="label-form-search visually-hidden" for="search">Введите название товара</label>
-          <input class="form-input-search" type="text" name="search" id="search" placeholder="Поиск по сайту">
+          <label class="label-form-search" for="search">
+            <input class="form-input-search" type="text" name="search" id="search" placeholder="Поиск по сайту">
+            <span class="visually-hidden">Введите название товара</span>
+          </label>
+
           <button class="button search-button button-dark" type="submit">Найти</button>
-          <!-- .button -->
         </form>
 
         <ul class="user-list list-reset">
@@ -45,13 +47,13 @@
                 <li class="basket-list-item">
                   <a class="basket-list-link" href="#" tabindex="-1">
                     <img class="basket-photo" src="images/cards/smoll/product-1-small.jpg" width="39" height="43" alt="Любительская селфи-палка">
-                    
+
                     <h4 class="basket-title-link" href="#">Любительская <br>селфи-палка</h4>
                   </a>
 
                   <button class="button-basket-delete" type="button">
-                    <span class="visually-hidden">Удалить из корзины</span>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" fill="none"><g clip-path="url(#a)"><path d="m11 1-1-1-4.5 4.5L1 0 0 1l4.5 4.5L0 10l1 1 4.5-4.5L10 11l1-1-4.5-4.5L11 1Z"/></g><defs><clipPath id="a"><path d="M0 0h11v11H0z"/></clipPath></defs></svg>
+                    <!-- <span class="visually-hidden">Удалить из корзины</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" fill="none"><g clip-path="url(#a)"><path d="m11 1-1-1-4.5 4.5L1 0 0 1l4.5 4.5L0 10l1 1 4.5-4.5L10 11l1-1-4.5-4.5L11 1Z"/></g><defs><clipPath id="a"><path d="M0 0h11v11H0z"/></clipPath></defs></svg> -->
                   </button>
                 </li>
 
@@ -60,20 +62,22 @@
                     <img class="basket-photo" src="images/cards/smoll/product-2-small.jpg" width="39" height="43" alt="Профессиональная селфи-палка">
                     <h4 class="basket-title-link" href="#">Профессиональная <br>селфи-палка</h4>
                   </a>
-                  
+
                   <button class="button-basket-delete" type="button">
                     <span class="visually-hidden">Удалить из корзины</span>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" fill="none"><g clip-path="url(#a)"><path d="m11 1-1-1-4.5 4.5L1 0 0 1l4.5 4.5L0 10l1 1 4.5-4.5L10 11l1-1-4.5-4.5L11 1Z"/></g><defs><clipPath id="a"><path d="M0 0h11v11H0z"/></clipPath></defs></svg>
+                    <!-- <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" fill="none"><g clip-path="url(#a)"><path d="m11 1-1-1-4.5 4.5L1 0 0 1l4.5 4.5L0 10l1 1 4.5-4.5L10 11l1-1-4.5-4.5L11 1Z"/></g><defs><clipPath id="a"><path d="M0 0h11v11H0z"/></clipPath></defs></svg> -->
                   </button>
                 </li>
               </ul>
-              
+
               <div class="basket-check">
                 <p class="basket-product">Товаров: 2</p>
                 <p class="basket-price">Сумма: 2000 ₽</p>
               </div>
-              
-                <a class="button button-basket" type="button">Открыть корзину</a>
+
+              <div class="basket-open">
+                <a class="button basket-button" type="button">Открыть корзину</a>
+              </div>
             </div>
           </li>
         </ul>
@@ -161,26 +165,7 @@
 
               <div class="range-container">
                 <div class="range-base">
-                  <div class="price-filter-range">
-                    <div class="price-filter-range-scale">
-                      <div class="price-filter-range-bar" style="left: 0; width: 57%;"></div>
-                      <button class="range-button range-button-min" type="button" aria-label="Минимальное значение"></button>
-                      <button class="range-button range-button-max" type="button" aria-label="Максимальное значение"></button>
-                    </div>
-                  </div>
-                  
-                  <div class="price-filter-interval">
-                    <label class="range-value" for="min-value">от 0
-                      <input class="range-input visually-hidden" id="min-value" type="number" value="0" name="mim-value" aria-label="Минимальное значение">
-                    </label>
-                   
-                    <label class="range-value" for="max-value">до 5000
-                      <input class="range-input visually-hidden" id="max-value" type="number" value="5000" name="max-value" aria-label="Максимальное значение">
-                    </label>
-                  </div>
-
-
-                  <!-- <div class="range-content range-content-min" style="left: 0; width: 120px;">
+                  <div class="range-content range-content-min" style="left: 0; width: 120px;">
                     <input class="range-input visually-hidden" id="min-value" type="number" value="0" name="mim-value" aria-label="Минимальное значение">
                     <button class="range-button range-button-min" type="button">
                       <span class="visually-hidden">Минимальное значение</span>
@@ -193,9 +178,28 @@
                       <span class="visually-hidden">Максимальное значение</span>
                     </button>
                     <label class="range-value" for="max-value">до 5000</label>
-                  </div> -->
+                  </div>
                 </div>
               </div>
+
+
+              <!-- <div class="price-filter-range">
+                    <div class="price-filter-range-scale">
+                      <div class="price-filter-range-bar" style="left: 0; width: 57%;"></div>
+                      <button class="range-button range-button-min" type="button" aria-label="Минимальное значение"></button>
+                      <button class="range-button range-button-max" type="button" aria-label="Максимальное значение"></button>
+                    </div>
+                  </div> -->
+
+                  <!-- <div class="price-filter-interval">
+                    <label class="range-value" for="min-value">от 0
+                      <input class="range-input visually-hidden" id="min-value" type="number" value="0" name="mim-value" aria-label="Минимальное значение">
+                    </label>
+
+                    <label class="range-value" for="max-value">до 5000
+                      <input class="range-input visually-hidden" id="max-value" type="number" value="5000" name="max-value" aria-label="Максимальное значение">
+                    </label>
+                  </div> -->
             </fieldset>
 
             <fieldset class="filter-fieldset-group filter-fieldset-group-check">
@@ -300,7 +304,7 @@
                     <span class="button card-image-button button-light">Подробнее</span>
                     <img class="card-photo" src="images/cards/big/photo-1.jpg" width="360" height="380" alt="Любительская селфи-палка">
                   </div>
-                  
+
                   <div class="card-description">
                     <h2 class="card-title">Любительская <br>селфи-палка</h2>
                     <p class="card-price">500&nbsp;₽</p>
@@ -326,7 +330,7 @@
                 <a class="card-link" href="#">
                   <div class="card-imgage">
                     <span class="button card-image-button button-light">Подробнее</span>
-                    <img class="card-photo" class="card-img" src="images/cards/big/photo-3.jpg" width="360" height="380" alt="Непотопляемая селфи-палка">
+                    <img class="card-photo" src="images/cards/big/photo-3.jpg" width="360" height="380" alt="Непотопляемая селфи-палка">
                   </div>
 
                   <div class="card-description">
@@ -342,7 +346,7 @@
                     <span class="button card-image-button  button-light">Подробнее</span>
                     <img class="card-photo" src="images/cards/big/photo-4.jpg" width="360" height="380" alt="Селфи-палка &laquo;Следуй за мной&raquo;">
                   </div>
-                  
+
                   <div class="card-description">
                     <h2 class="card-title">Селфи-палка &laquo;Следуй <br>за мной&raquo;</h2>
                     <p class="card-price">1 500&nbsp;₽</p>
@@ -351,7 +355,7 @@
               </li>
             </ul>
 
-            <a class="button button-load-more prduct-card-more" href="#">Загрузить ещё</a>
+            <a class="button button-load-more product-card-more" href="#">Загрузить ещё</a>
 
             <div class="pagination-page">
               <a class="pagination-button pagination-button-prev pagination-button-disabled" href="#">Назад</a>
@@ -394,7 +398,7 @@
 
       <div class="footer-content">
         <address class="address-info">
-          <p class="address-text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
+          <p class="address-desc">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
         </address>
 
         <ul class="footer-navigation navigation-list list-reset">
@@ -409,7 +413,7 @@
           </li>
         </ul>
 
-        <a class="contacts-phone" href="tel:+78128121212">Тел.: +7 (812) 812-12-12</a>
+        <a class="address-phone" href="tel:+78128121212">Тел.: +7 (812) 812-12-12</a>
 
         <ul class="social-list list-reset">
           <li class="social-list-item">
