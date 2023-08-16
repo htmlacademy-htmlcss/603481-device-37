@@ -18,8 +18,8 @@
       <div class="header-user-container">
         <form class="form-search" action="http://echo.htmlacademy.ru" method="get">
           <h2 class="visually-hidden">Форма поиска по сайту</h2>
-          <label class="label-form-search" for="search">
-            <input class="form-input-search" type="text" name="search" id="search" placeholder="Поиск по сайту">
+          <label class="form-search-label" for="search">
+            <input class="form-search-input" type="text" name="search" id="search" placeholder="Поиск по сайту">
             <span class="visually-hidden">Введите название товара</span>
           </label>
 
@@ -46,26 +46,24 @@
               <ul class="basket-list list-reset">
                 <li class="basket-list-item">
                   <a class="basket-list-link" href="#" tabindex="-1">
-                    <img class="basket-photo" src="images/cards/smoll/product-1-small.jpg" width="39" height="43" alt="Любительская селфи-палка">
+                    <img src="images/cards/smoll/product-1-small.jpg" width="39" height="43" alt="Любительская селфи-палка">
 
                     <h4 class="basket-title-link" href="#">Любительская <br>селфи-палка</h4>
                   </a>
 
-                  <button class="button-basket-delete" type="button">
-                    <!-- <span class="visually-hidden">Удалить из корзины</span>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" fill="none"><g clip-path="url(#a)"><path d="m11 1-1-1-4.5 4.5L1 0 0 1l4.5 4.5L0 10l1 1 4.5-4.5L10 11l1-1-4.5-4.5L11 1Z"/></g><defs><clipPath id="a"><path d="M0 0h11v11H0z"/></clipPath></defs></svg> -->
+                  <button class="button button-basket-delete" type="button">
+                    <span class="visually-hidden">Удалить из корзины</span>
                   </button>
                 </li>
 
                 <li class="basket-list-item">
                   <a class="basket-list-link" href="#" tabindex="-1">
-                    <img class="basket-photo" src="images/cards/smoll/product-2-small.jpg" width="39" height="43" alt="Профессиональная селфи-палка">
+                    <img src="images/cards/smoll/product-2-small.jpg" width="39" height="43" alt="Профессиональная селфи-палка">
                     <h4 class="basket-title-link" href="#">Профессиональная <br>селфи-палка</h4>
                   </a>
 
-                  <button class="button-basket-delete" type="button">
+                  <button class="button button-basket-delete" type="button">
                     <span class="visually-hidden">Удалить из корзины</span>
-                    <!-- <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" fill="none"><g clip-path="url(#a)"><path d="m11 1-1-1-4.5 4.5L1 0 0 1l4.5 4.5L0 10l1 1 4.5-4.5L10 11l1-1-4.5-4.5L11 1Z"/></g><defs><clipPath id="a"><path d="M0 0h11v11H0z"/></clipPath></defs></svg> -->
                   </button>
                 </li>
               </ul>
@@ -165,11 +163,12 @@
 
               <div class="range-container">
                 <div class="range-base">
-                  <div class="range-content range-content-min" style="left: 0; width: 120px;">
+                  <div class="range-content range-content-min" style="left: 0; width: 0;">
                     <input class="range-input visually-hidden" id="min-value" type="number" value="0" name="mim-value" aria-label="Минимальное значение">
                     <button class="range-button range-button-min" type="button">
                       <span class="visually-hidden">Минимальное значение</span>
                     </button>
+                    <!-- <label class="range-value" for="min-value">от 0</label> -->
                   </div>
 
                   <div class="range-content range-content-max">
@@ -181,25 +180,6 @@
                   </div>
                 </div>
               </div>
-
-
-              <!-- <div class="price-filter-range">
-                    <div class="price-filter-range-scale">
-                      <div class="price-filter-range-bar" style="left: 0; width: 57%;"></div>
-                      <button class="range-button range-button-min" type="button" aria-label="Минимальное значение"></button>
-                      <button class="range-button range-button-max" type="button" aria-label="Максимальное значение"></button>
-                    </div>
-                  </div> -->
-
-                  <!-- <div class="price-filter-interval">
-                    <label class="range-value" for="min-value">от 0
-                      <input class="range-input visually-hidden" id="min-value" type="number" value="0" name="mim-value" aria-label="Минимальное значение">
-                    </label>
-
-                    <label class="range-value" for="max-value">до 5000
-                      <input class="range-input visually-hidden" id="max-value" type="number" value="5000" name="max-value" aria-label="Максимальное значение">
-                    </label>
-                  </div> -->
             </fieldset>
 
             <fieldset class="filter-fieldset-group filter-fieldset-group-check">
