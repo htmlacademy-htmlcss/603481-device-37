@@ -299,8 +299,9 @@
     </section>
 
     <div class="promo-block container">
-      <a class="promo-block-link button-modal-open" href="#">Доставим редкий товар под заказ</a>
-      <span class="promo-block-info"></span>
+      <a class="promo-block-link button-modal-open" href="#">Доставим редкий товар под заказ
+        <span class="promo-block-info"></span>
+      </a>
     </div>
 
     <div class="wrapper-contacts container">
@@ -428,29 +429,31 @@
       <h2 class="title modal-delivery-title" id="modal-delivery-title">Доставка под заказ</h2>
 
       <form class="modal-delivery-form" action="https://echo.htmlacademy.ru/" method="get">
+
         <fieldset class="modal-fieldset-group modal-fieldset-name">
           <label class="modal-form-label" for="modal-form-name">Ваше имя:</label>
-          <input class="modal-form-input" type="text" name="modal-form-name" id="modal-form-name" placeholder="Введите имя" required>
-          <span class="visually-hidden modal-form-notice">Добавьте имя</span>
+          <input class="moal-form-input moal-form-input-name" type="text" name="modal-form-name" id="modal-form-name" placeholder="Введите имя" required>
+          <span class="modal-form-notice">Добавьте имя</span>
         </fieldset>
 
-        <fieldset class="modal-fieldset-group modal-fieldset-email">
+        <fieldset class="modal-fieldset-group modal-fieldset-group-error modal-fieldset-email">
           <label class="modal-form-label" for="modal-form-email">Ваш e-mail:</label>
-          <input class="modal-form-input modal-form-input-error" type="email" name="modal-form-email" id="modal-form-email" placeholder="почта" required>
-          <span class="modal-form-notice modal-form-notice-error">Забавный у вас адрес</span>
+          <input class="moal-form-input moal-form-input-email" type="email" name="modal-form-email" id="modal-form-email" value="почта" placeholder="Введите адрес электронной почты" required>
+          <span class="modal-form-notice">Забавный у вас адрес</span>
         </fieldset>
 
-        <fieldset class="modal-fieldset-group modal-fieldset-text">
-          <label class="modal-form-label" for="modal-form-label-message">Что нужно привезти:</label>
-          <input class="modal-form-input modal-form-message" type="text" name="modal-form-label-message" id="modal-form-label-message" placeholder="В свободной форме" required>
-          <span class="visually-hidden">Текст в свободной форме</span>
+        <fieldset class="modal-fieldset-group modal-fieldset-commit">
+          <label class="modal-form-label" for="modal-form-label-commit">Что нужно привезти:</label>
+          <textarea class="moal-form-input modal-form-textarea" type="text" name="commit" id="modal-form-label-commit" placeholder="В свободной форме" required>
         </fieldset>
 
         <fieldset class="modal-fieldset-group modal-fieldset-couner">
 
           <div class="modal-label-with-tooltip">
             <label class="modal-form-label modal-form-label-tooltip" for="modal-form-couner-product">Количество:</label>
+          </div>
 
+          <div class="modal-label-with-tooltip">
             <div class="modal-tooltip">
               <button class="modal-tooltip-toggle" type="button" aria-labelledby="tooltip-children">
                 <span class="visually-hidden">Подробности</span>
@@ -459,28 +462,27 @@
             </div>
           </div>
 
-
-
           <span class="modal-form-input-with-buttons">
+
+            <input class="modal-form-input modal-form-input-number" id="modal-form-couner-product" type="number" name="quantty" min="1" max="999" step="1" value="1" required>
+
             <button class="modal-form-button-edit modal-form-button-decrease" type="button">
               <span class="visually-hidden">Уменьшить число товаров на 1</span>
             </button>
 
-            <input class="modal-form-input-number" type="number" id="modal-form-couner-product" placeholder="1">
-
             <button class="modal-form-button-edit modal-form-button-increase" type="button">
               <span class="visually-hidden">Увеличить число товаров на 1</span>
             </button>
-          </span>
 
+          </span>
         </fieldset>
 
-        <button class="button button-light" type="submit">Отправить</button>
+        <button class="button button-light modal-form-button" type="submit">Отправить</button>
       </form>
 
     </section>
   </dialog>
 
-  <script src="./js/app.js"></script>
+  <script src="js/app.js"></script>
 </body>
 </html>
