@@ -4,8 +4,7 @@ const modalClose = document.querySelector(".button-modal-close")
 const dialog = document.querySelector(".modal-window")
 
 modalOpen.addEventListener("click", function() {
-    // dialog.showModal()
-    dialog.show()
+    dialog.showModal()
 })
 
 modalClose.addEventListener("click", function() {
