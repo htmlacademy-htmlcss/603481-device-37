@@ -43,23 +43,23 @@
               <ul class="basket-list list-reset">
                 <li class="basket-list-item">
                   <a class="basket-list-link" href="#">
-                    <img src="images/cards/smoll/product-1-small.jpg" width="39" height="43" alt="Любительская селфи-палка">
+                    <img src="images/cards/photo-1.jpg" width="39" height="43" alt="Любительская селфи-палка">
 
                     <h4 class="basket-title-link">Любительская <br>селфи-палка</h4>
                   </a>
 
-                  <button class="button button-basket-delete" type="button">
+                  <button class="button-basket-delete" type="button">
                     <span class="visually-hidden">Удалить из корзины</span>
                   </button>
                 </li>
 
                 <li class="basket-list-item">
                   <a class="basket-list-link" href="#">
-                    <img src="images/cards/smoll/product-2-small.jpg" width="39" height="43" alt="Профессиональная селфи-палка">
+                    <img src="images/cards/photo-2.jpg" width="39" height="43" alt="Профессиональная селфи-палка">
                     <h4 class="basket-title-link">Профессиональная <br>селфи-палка</h4>
                   </a>
 
-                  <button class="button button-basket-delete" type="button">
+                  <button class="button-basket-delete" type="button">
                     <span class="visually-hidden">Удалить из корзины</span>
                   </button>
                 </li>
@@ -282,17 +282,17 @@
         <ul class="services-list list-reset">
           <li class="services-item services-item-delivery services-item-active">
             <h3 class="title services-title">Доставка</h3>
-            <p class="service-text">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем,поднимая его на ваш этаж.</p>
+            <p class="service-text">Мы с удовольствием доставим ваш товар прямо <br>к вашему подъезду совершенно бесплатно! Ведь <br>мы неплохо заработаем, поднимая его на ваш этаж.</p>
           </li>
 
           <li class="services-item services-item-guarantee">
             <h3 class="title services-title">Гарантия</h3>
-            <p class="service-text">Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. Товар, не дом, конечно же. </p>
+            <p class="service-text">Если из-за возгорания купленного у нас товара у вас <br>сгорит дом — не переживайте, мы выдадим вам новый. <br>Товар, не дом, конечно же.</p>
           </li>
 
           <li class="services-item services-item-credit">
             <h3 class="title services-title">Кредит</h3>
-            <p class="service-text">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для банка, разумеется.</p>
+            <p class="service-text">Залезть в долговую яму стало проще! Кредитные <br>консультанты подберут для вас наиболее выгодные <br>условия кредита. Выгодные для банка, разумеется.</p>
           </li>
         </ul>
       </div>
@@ -419,7 +419,7 @@
     </div>
   </footer>
 
-  <dialog class="modal-window modal-wrapper" aria-labelledby="modal-delivery-title">
+  <dialog class="modal-window" aria-labelledby="modal-delivery-title" open="open">
 
     <button class="button-modal-close">
       <span class="visually-hidden">Закрыть модальное окно</span>
@@ -429,31 +429,29 @@
       <h2 class="title modal-delivery-title" id="modal-delivery-title">Доставка под заказ</h2>
 
       <form class="modal-delivery-form" action="https://echo.htmlacademy.ru/" method="get">
-
+        <!-- Класс modal-fieldset-group-error показывает ошибку валидаци -->
+        <!-- Класс modal-fieldset-group-valid показывает, что валидация прошла успешно -->
         <fieldset class="modal-fieldset-group modal-fieldset-name">
           <label class="modal-form-label" for="modal-form-name">Ваше имя:</label>
-          <input class="moal-form-input moal-form-input-name" type="text" name="modal-form-name" id="modal-form-name" placeholder="Введите имя" required>
+          <input class="modal-form-input modal-form-input-name" type="text" name="modal-form-name" id="modal-form-name" placeholder="Введите имя" required>
           <span class="modal-form-notice">Добавьте имя</span>
         </fieldset>
 
-        <fieldset class="modal-fieldset-group modal-fieldset-group-error modal-fieldset-email">
+        <fieldset class="modal-fieldset-group modal-fieldset-email modal-fieldset-group-error">
           <label class="modal-form-label" for="modal-form-email">Ваш e-mail:</label>
-          <input class="moal-form-input moal-form-input-email" type="email" name="modal-form-email" id="modal-form-email" value="почта" placeholder="Введите адрес электронной почты" required>
+          <input class="modal-form-input modal-form-input-email" type="email" name="modal-form-email" id="modal-form-email" value="почта" placeholder="Введите адрес электронной почты" required>
           <span class="modal-form-notice">Забавный у вас адрес</span>
         </fieldset>
 
-        <fieldset class="modal-fieldset-group modal-fieldset-commit">
-          <label class="modal-form-label" for="modal-form-label-commit">Что нужно привезти:</label>
-          <textarea class="moal-form-input modal-form-textarea" type="text" name="commit" id="modal-form-label-commit" placeholder="В свободной форме" required>
+        <fieldset class="modal-fieldset-group modal-fieldset-textarea">
+          <label class="modal-form-label" for="modal-form-label-textarea">Что нужно привезти:</label>
+          <textarea class="modal-form-input modal-form-textarea" name="modal-form-label-textarea" id="modal-form-label-textarea" placeholder="В свободной форме"></textarea>
         </fieldset>
 
         <fieldset class="modal-fieldset-group modal-fieldset-couner">
 
           <div class="modal-label-with-tooltip">
             <label class="modal-form-label modal-form-label-tooltip" for="modal-form-couner-product">Количество:</label>
-          </div>
-
-          <div class="modal-label-with-tooltip">
             <div class="modal-tooltip">
               <button class="modal-tooltip-toggle" type="button" aria-labelledby="tooltip-children">
                 <span class="visually-hidden">Подробности</span>
@@ -484,5 +482,6 @@
   </dialog>
 
   <script src="js/app.js"></script>
+
 </body>
 </html>
