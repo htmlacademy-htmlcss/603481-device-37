@@ -3,6 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png">
+  <link rel="stylesheet" href="styles/style.css">
   <link rel="stylesheet" href="styles/style.css">
   <title>Моноподы для селфи</title>
 </head>
@@ -12,7 +15,7 @@
     <div class="header-container container">
 
       <a class="logo-link-header" href="index.html" aria-current="page">
-        <img src="images/logo-device.svg" width="145" height="36" alt="Логотип компании Device">
+        <img src="images/logo-device.svg" width="145" height="36" alt="Логотип компании Device.">
       </a>
 
       <div class="header-user-container">
@@ -46,9 +49,9 @@
               <ul class="basket-list list-reset">
                 <li class="basket-list-item">
                   <a class="basket-list-link" href="#">
-                    <img src="images/cards/photo-1.jpg" width="39" height="43" alt="Любительская селфи-палка">
+                    <img src="images/cards/photo-1.jpg" width="39" height="43" alt="Любительская селфи-палка.">
 
-                    <h4 class="basket-title-link">Любительская <br>селфи-палка</h4>
+                    <h3 class="basket-title-link">Любительская <br>селфи-палка</h3>
                   </a>
 
                   <button class="button-basket-delete" type="button">
@@ -59,7 +62,7 @@
                 <li class="basket-list-item">
                   <a class="basket-list-link" href="#">
                     <img src="images/cards/photo-2.jpg" width="39" height="43" alt="Профессиональная селфи-палка">
-                    <h4 class="basket-title-link">Профессиональная <br>селфи-палка</h4>
+                    <h3 class="basket-title-link">Профессиональная <br>селфи-палка</h3>
                   </a>
 
                   <button class="button-basket-delete" type="button">
@@ -82,39 +85,54 @@
       </div>
 
       <nav class="navigation">
-        <ul class="header-navigation navigation-list list-reset">
+        <ul class="navigation-list list-reset">
           <li class="navigation-item navigation-item-catalog">
-            <a class="navigation-link navigation-link-catalog" href="catalog.html" aria-current="page">
+            <a class="navigation-link navigation-link-catalog" href="catalog.html">
               Каталог товаров
               <span></span>
             </a>
-            <div class="navigation-catalog-container">
-              <ul class="navigation-catalog-list navigation-catalog-list-mobile list-reset">
-                <li class="navigation-catalog-item">
-                  <a class="navigation-catalog-link" href="#">Виртуальная реальность</a>
-                </li>
-                <li class="navigation-catalog-item">
-                  <a class="navigation-catalog-link navigation-catalog-link-current" href="catalog.html" aria-current="page">Моноподы для cелфи</a>
-                </li>
-                <li class="navigation-catalog-item">
-                  <a class="navigation-catalog-link" href="#">Экшн-камеры</a>
-                </li>
-              </ul>
-              <ul class="navigation-catalog-list navigation-catalog-list-smart list-reset">
-                <li class="navigation-catalog-item">
-                  <a class="navigation-catalog-link" href="#">Фитнес-браслеты</a>
-                </li>
-                <li class="navigation-catalog-item">
-                  <a class="navigation-catalog-link" href="#">Умные часы</a>
-                </li>
-              </ul>
-              <ul class="navigation-catalog-list navigation-catalog-list-video list-reset">
-                <li class="navigation-catalog-item">
-                  <a class="navigation-catalog-link" href="#">Квадрокоптеры</a>
-                </li>
-              </ul>
-            </div>
+
+            <ul class="navigation-catalog-dropdown dropdown-menu list-reset">
+
+              <li class="dropdown-menu-list">
+
+                <ul class="dropdown-menu-submenu-list list-reset">
+
+                  <li class="dropdown-menu-item">
+                    <a class="dropdown-menu-link" href="#">Виртуальная реальность</a>
+                  </li>
+
+                  <li class="dropdown-menu-item">
+                    <a class="dropdown-menu-link dropdown-menu-link-current" href="catalog.html">Моноподы для cелфи</a>
+                  </li>
+
+                  <li class="dropdown-menu-item">
+                    <a class="dropdown-menu-link" href="#">Экшн-камеры</a>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="dropdown-menu-list">
+                <ul class="dropdown-menu-submenu-list list-reset">
+                  <li class="dropdown-menu-item">
+                    <a class="dropdown-menu-link" href="#">Фитнес-браслеты</a>
+                  </li>
+                  <li class="dropdown-menu-item">
+                    <a class="dropdown-menu-link" href="#">Умные часы</a>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="dropdown-menu-list">
+                <ul class="dropdown-menu-submenu-list list-reset">
+                  <li class="dropdown-menu-item">
+                    <a class="dropdown-menu-link" href="#">Квадрокоптеры</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
           </li>
+
           <li class="navigation-item">
             <a class="navigation-link" href="#delivery">Доставка</a>
           </li>
@@ -159,31 +177,36 @@
           <form class="form-filter" action="https://echo.htmlacademy.ru/" method="get">
 
             <fieldset class="filter-fieldset-group fieldset-group-price">
-              <h3 class="filter-legend">Стоимость</h3>
+              <h3 class="filter-legend filter-legend-price">Стоимость</h3>
 
               <div class="range-container">
-                <div class="range-base">
-                  <div class="range-content range-content-min" style="left: 0; width: 0;">
-                    <input class="range-input visually-hidden" id="min-value" type="number" value="0" name="mim-value" aria-label="Минимальное значение">
-                    <button class="range-button range-button-min" type="button">
-                      <span class="visually-hidden">Минимальное значение</span>
+                <div class="range-scale">
+                  <div class="range-bar" style="left: 0; width: 119px">
+                    <button class="range-toggle toggle-min" type="button">
+                      <span class="visually-hidden">Изменить минимальную цену.</span>
                     </button>
-                    <label class="range-value" for="min-value">от&nbsp;0</label>
-                  </div>
-
-                  <div class="range-content range-content-max">
-                    <input class="range-input visually-hidden" id="max-value" type="number" value="5000" name="max-value" aria-label="Максимальное значение">
-                    <button class="range-button range-button-max" type="button">
-                      <span class="visually-hidden">Максимальное значение</span>
+                    <button class="range-toggle toggle-max" type="button">
+                      <span class="visually-hidden">Изменить максимальную цену.</span>
                     </button>
-                    <label class="range-value" for="max-value">до&nbsp;5000</label>
                   </div>
                 </div>
+
+                <div class="range-wrapper-inputs">
+                  <label class="catalog-filter-label">
+                    <span class="range-value">от</span>
+                     <input class="range-input" type="number" value="0" name="min-price">
+                  </label>
+                  <label class="catalog-filter-label">
+                    <span class="range-value">до</span>
+                    <input class="range-input" type="number" value="5000" name="max-price">
+                  </label>
+                </div>
               </div>
+
             </fieldset>
 
             <fieldset class="filter-fieldset-group filter-fieldset-group-check">
-              <h3 class="filter-legend">Цвет</h3>
+              <h3 class="filter-legend filter-legend-color">Цвет</h3>
 
               <ul class="filter-list list-reset">
 
@@ -226,7 +249,7 @@
             </fieldset>
 
             <fieldset class="filter-fieldset-group filter-fieldset-group-radio">
-              <h3 class="filter-legend">Bluetooth</h3>
+              <h3 class="filter-legend filter-legend-bluetooth">Bluetooth</h3>
 
               <ul class="filter-list list-reset">
                 <li class="filter-item">
@@ -282,7 +305,7 @@
                 <a class="card-link" href="#">
                   <div class="card-imgage">
                     <span class="button card-image-button button-light">Подробнее</span>
-                    <img class="card-photo" src="images/cards/photo-1.jpg" width="360" height="380" alt="Любительская селфи-палка">
+                    <img class="card-photo" src="images/cards/photo-1.jpg" width="360" height="380" alt="Любительская селфи-палка.">
                   </div>
 
                   <div class="card-description">
@@ -310,7 +333,7 @@
                 <a class="card-link" href="#">
                   <div class="card-imgage">
                     <span class="button card-image-button button-light">Подробнее</span>
-                    <img class="card-photo" src="images/cards/photo-3.jpg" width="360" height="380" alt="Непотопляемая селфи-палка">
+                    <img class="card-photo" src="images/cards/photo-3.jpg" width="360" height="380" alt="Непотопляемая селфи-палка.">
                   </div>
 
                   <div class="card-description">
@@ -324,7 +347,7 @@
                 <a class="card-link" href="#">
                   <div class="card-imgage">
                     <span class="button card-image-button  button-light">Подробнее</span>
-                    <img class="card-photo" src="images/cards/photo-4.jpg" width="360" height="380" alt="Селфи-палка &laquo;Следуй за мной&raquo;">
+                    <img class="card-photo" src="images/cards/photo-4.jpg" width="360" height="380" alt="Селфи-палка &laquo;Следуй за мной&raquo;.">
                   </div>
 
                   <div class="card-description">
@@ -373,7 +396,7 @@
   <footer class="footer-page">
     <div class="footer-container container">
       <a class="logo-link-footer" href="index.html" aria-current="page">
-        <img src="images/logo-device-footer.svg" width="145" height="36" alt="Логотип компании Device">
+        <img src="images/logo-device-footer.svg" width="145" height="36" alt="Логотип компании Device.">
       </a>
 
       <div class="footer-content">
