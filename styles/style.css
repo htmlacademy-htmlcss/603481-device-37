@@ -382,28 +382,23 @@ img {
 
 .user-list-link-logout {
   padding: 0 8px;
-
   opacity: 0.3;
 }
 
 .user-icon-login {
   padding-left: 27px;
-
   background-image: url("../images/svg/icons/login.svg");
 }
 
 .user-icon-compare {
   padding-left: 22px;
-
   background-image: url("../images/svg/icons/sort.svg");
   background-position: center left;
 }
 
 .user-icon-basket {
   position: relative;
-
   padding-left: 40px;
-
   background-image: url("../images/svg/icons/cart.svg");
   background-position: center left 12px;
 }
