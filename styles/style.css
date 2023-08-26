@@ -1543,6 +1543,7 @@ img {
 
 .filter-fieldset-group-radio {
   margin-top: 4px;
+  margin-bottom: 4px;
 }
 
 .filter-legend {
@@ -1778,7 +1779,7 @@ img {
 /* Стилизация кнопки */
 .filter-button {
   width: 220px;
-  padding: 16px 46px;
+  padding: 12px 46px;
 }
 
 /* sort */
