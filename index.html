@@ -10,7 +10,138 @@
 </head>
 <body>
 
-  
+  <header class="header-page">
+    <div class="header-container container">
+
+      <a class="logo-link-header" href="index.html" aria-current="page">
+        <img src="images/logo-device.svg" width="145" height="36" alt="Логотип компании Device.">
+      </a>
+
+      <div class="header-user-container">
+        <form class="form-search" action="http://echo.htmlacademy.ru" method="get">
+          <h2 class="visually-hidden">Форма поиска по сайту</h2>
+          <label class="form-search-label" for="search">
+            <input class="form-search-input" type="text" name="search" id="search" placeholder="Поиск по сайту">
+            <span class="visually-hidden">Введите название товара</span>
+          </label>
+
+          <button class="button search-button button-dark" type="submit">Найти</button>
+        </form>
+
+        <ul class="user-list list-reset">
+          <li class="user-list-item user-list-login">
+            <a class="user-list-link user-icon-login" href="#">Войти</a>
+          </li>
+          <li class="user-list-item ">
+            <a class="user-list-link user-icon-compare" href="#">Сравнить</a>
+          </li>
+          <li class="user-list-item user-list-item-basket">
+            <a class="user-list-link user-icon-basket" href="#">
+              <span class="basket-counter">2</span>
+              Корзина
+            </a>
+            <!-- Блок с корзиной -->
+            <div class="basket-container">
+              <ul class="basket-list list-reset">
+                <li class="basket-list-item">
+                  <a class="basket-list-link" href="#">
+                    <img src="images/cards/photo-1.jpg" width="39" height="43" alt="Любительская селфи-палка.">
+
+                    <h3 class="basket-title-link">Любительская <br>селфи-палка</h3>
+                  </a>
+
+                  <button class="button-basket-delete" type="button">
+                    <span class="visually-hidden">Удалить из корзины</span>
+                  </button>
+                </li>
+
+                <li class="basket-list-item">
+                  <a class="basket-list-link" href="#">
+                    <img src="images/cards/photo-2.jpg" width="39" height="43" alt="Профессиональная селфи-палка.">
+                    <h3 class="basket-title-link">Профессиональная <br>селфи-палка</h3>
+                  </a>
+
+                  <button class="button-basket-delete" type="button">
+                    <span class="visually-hidden">Удалить из корзины</span>
+                  </button>
+                </li>
+              </ul>
+
+              <div class="basket-check">
+                <p class="basket-product">Товаров: 2</p>
+                <p class="basket-price">Сумма: 2000 ₽</p>
+              </div>
+
+              <div class="basket-open">
+                <a class="button basket-button" href="#">Открыть корзину</a>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <nav class="navigation">
+        <ul class="navigation-list list-reset">
+          <li class="navigation-item navigation-item-catalog">
+            <a class="navigation-link navigation-link-catalog" href="catalog.html">
+              Каталог товаров
+              <span></span>
+            </a>
+
+            <ul class="navigation-catalog-dropdown dropdown-menu list-reset">
+
+              <li class="dropdown-menu-list">
+
+                <ul class="dropdown-menu-submenu-list list-reset">
+
+                  <li class="dropdown-menu-item">
+                    <a class="dropdown-menu-link" href="#">Виртуальная реальность</a>
+                  </li>
+
+                  <li class="dropdown-menu-item">
+                    <a class="dropdown-menu-link" href="catalog.html">Моноподы для cелфи</a>
+                  </li>
+
+                  <li class="dropdown-menu-item">
+                    <a class="dropdown-menu-link" href="#">Экшн-камеры</a>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="dropdown-menu-list">
+                <ul class="dropdown-menu-submenu-list list-reset">
+                  <li class="dropdown-menu-item">
+                    <a class="dropdown-menu-link" href="#">Фитнес-браслеты</a>
+                  </li>
+                  <li class="dropdown-menu-item">
+                    <a class="dropdown-menu-link" href="#">Умные часы</a>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="dropdown-menu-list">
+                <ul class="dropdown-menu-submenu-list list-reset">
+                  <li class="dropdown-menu-item">
+                    <a class="dropdown-menu-link" href="#">Квадрокоптеры</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+
+          <li class="navigation-item">
+            <a class="navigation-link" href="#delivery">Доставка</a>
+          </li>
+          <li class="navigation-item">
+            <a class="navigation-link" href="#">Гарантия</a>
+          </li>
+          <li class="navigation-item">
+            <a class="navigation-link" href="#contacts">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
   <main class="main-page">
 
